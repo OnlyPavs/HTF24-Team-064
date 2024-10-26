@@ -1,38 +1,31 @@
-import React from 'react'
-import Featured from './components/Featured'
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
-import Homepage from './components/Homepage'
-import Footer from './components/Footer'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Signup from './auth/Signup';
-import Login from './auth/Login';
+  import React from 'react';
+  // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+  import Navbar from './components/Navbar';
+  import Hero from './components/Hero';
+  import Featured from './components/Featured';
+  import Homepage from './components/Homepage';
+  import Footer from './components/Footer';
+  import Signup from './pages/Signup';
+  import Login from './pages/Login';
+  import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route path="/signup" component={Signup} />
-        <Route path="/login" component={Login} />
-        {/* Other routes */}
-      </Switch>
-    </Router>
-  );
-}
+  function App() {
+    return (
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/" exact>
+            {/* <Hero />
+            <Featured />
+            <Homepage /> */}
+          </Route>
+          {/* Add other routes here */}
+        </Routes>
+        <Footer />
+      </Router>
+    );
+  }
 
-export default App;
-
-
-function App() {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <Featured />
-      <Homepage />
-      <Footer />
-    </>
-  );
-}
-
-export default App;
+  export default App;
