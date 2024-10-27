@@ -11,7 +11,7 @@ export default function Navbar() {
       className="navbar navbar-expand-lg navbar-light border-bottom py-3 px-5"
     >
       <Link to="/" className="navbar-brand">
-        🌐 coinwire.us
+        CryptoInsights
       </Link>
 
       <button

@@ -14,7 +14,7 @@ const instance = axios.create({
 // Interceptor to handle rate limiting
 instance.interceptors.request.use(async (config) => {
   // Introduce a delay before each request
-  await sleep(1000); // 1 second delay (adjust as needed)
+  await sleep(10000); // 1 second delay (adjust as needed)
   return config;
 }, (error) => {
   return Promise.reject(error);

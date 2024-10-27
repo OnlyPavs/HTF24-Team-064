@@ -1,10 +1,10 @@
-# Coingecko Clone
+# crypto-insights Clone
 
-Cloned version of [coingecko](https://www.coingecko.com/en) (only main page for interview purpose).
+Cloned version of [crypto-insights](https://www.crypto-insights.com/en) (only main page for interview purpose).
 
 ## Demo
 
-[https://donztea-coingecko-clone.netlify.app](https://donztea-coingecko-clone.netlify.app)
+[https://donztea-crypto-insights-clone.netlify.app](https://donztea-crypto-insights-clone.netlify.app)
 
 ## Highlighted User Interfaces
 

@@ -31,7 +31,7 @@ export default function Detail() {
 
   useLayoutEffect(() => {
     document.title =
-      'Bitcoin price, BTC price index, chart, and info | CoinGecko clone';
+      'Bitcoin price, BTC price index, chart, and info | crypto-insights clone';
   }, []);
 
   useEffect(() => {
