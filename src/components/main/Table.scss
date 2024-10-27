@@ -1,0 +1,34 @@
+#table {
+  font-size: 0.95em;
+
+  .header {
+    color: black;
+    font-weight: normal;
+  }
+
+  .arrow {
+    color: #999999;
+    transition: 0.2s;
+  }
+
+  .sortable-column {
+    &:hover {
+      .arrow {
+        color: #000;
+      }
+
+      cursor: pointer;
+    }
+  }
+
+  .favorite {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}

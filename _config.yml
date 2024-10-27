@@ -1,0 +1,10 @@
+---
+title: crypto-insights Clone
+timezone: UTC
+collections:
+  posts:
+    title: Featured
+    output: true
+  uploads:
+    title: Uploads
+    output: true
