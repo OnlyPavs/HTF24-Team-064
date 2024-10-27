@@ -1,11 +1,17 @@
-import React, {useState} from 'react'
-import {FaBars, FaTimes} from 'react-icons/fa'
-import './Navbar.css'
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import './Navbar.css';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Navbar = () => {
-const [click, setClick] = useState(false)
-const handleClick = () => setClick(!click)
+    const [click, setClick] = useState(false);
+    const navigate = useNavigate(); // Initialize useNavigate
 
+    const handleClick = () => setClick(!click);
+
+    const handleSignup = () => {
+        navigate('/signup'); // Redirect to the signup/login page
+    };
 
     return (
         <div className='header'>
@@ -26,15 +32,14 @@ const handleClick = () => setClick(!click)
                     </li>
                 </ul>
                 <div className='btn-group'>
-                    <button className='btn'>Login/Homepage</button>
+                    <button className='btn' onClick={handleSignup}>Login/Signup</button> {/* Update button text */}
                 </div>
                 <div className='hamburger' onClick={handleClick}>
-                    {click ? (<FaTimes size={20} style={{color: '#333'}}/>) : (<FaBars size={20} style={{color: '#333'}} />)}
-                    
+                    {click ? (<FaTimes size={20} style={{ color: '#333' }} />) : (<FaBars size={20} style={{ color: '#333' }} />)}
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
