@@ -10,7 +10,7 @@ const Navbar = () => {
     const handleClick = () => setClick(!click);
 
     const handleSignup = () => {
-        navigate('/signup'); // Redirect to the signup/login page
+        navigate('/auth'); // Redirect to the signup/login page
     };
 
     return (

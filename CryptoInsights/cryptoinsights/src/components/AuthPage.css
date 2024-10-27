@@ -1,0 +1,16 @@
+.auth-container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start; /* Align items at the top */
+    margin: 20px; /* Add some margin around the container */
+  }
+  
+  .form-container {
+    width: 300px; /* Set a fixed width for forms */
+    padding: 20px; /* Add some padding */
+  }
+  
+  .separator {
+    width: 20px; /* Width of the separator */
+  }
+  
